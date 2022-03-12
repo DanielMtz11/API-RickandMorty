@@ -1,9 +1,8 @@
 import React from 'react';
 import axios from 'axios';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect} from 'react';
 
-const Resident = ({residentUrl}) => {
+const ResidentInfo = ({residentUrl}) => {
 
     const [recident, setRecident]= useState({});
 
@@ -23,4 +22,4 @@ const Resident = ({residentUrl}) => {
     );
 };
 
-export default Resident;
+export default ResidentInfo;
