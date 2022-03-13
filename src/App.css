@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -34,5 +35,79 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+/* location info styles */
+.locationInfo{
+  min-width: 320px;
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 10px;
+  text-align: center;
+  border:2px solid black ;
+  border-radius: 8px;
+
+}
+.locationInfo__h1{
+  /* background-color: #61dafb; */
+
+}
+.locationInfo__details{
+  margin-top: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+.locationInfo__details span{
+  display: block;
+  margin: 10px ;
+
+}
+/* search box styles */
+.input{
+  /* background-color: #707172; */
+  height: 42px;
+  min-width: 320px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.input input{
+  width: 70%;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+
+}
+.input input::placeholder{
+  text-align: center;
+  /* color: blue; */
+  font-size: 20px;
+
+}
+.input button{
+  width: 30%;
+  font-size: 20px;
+
+  border-radius: 0 10px 10px 0;
+
+}
+
+
+@media only screen and (min-width:650px){
+  .locationInfo__details{
+    text-align: center;
+  }
+  .locationInfo__details span{
+    display: inline;
+  
   }
 }

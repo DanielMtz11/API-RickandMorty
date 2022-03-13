@@ -11,19 +11,17 @@ const SearchBox = ({setUbication}) => {
         axios.get(`https://rickandmortyapi.com/api/location/${SearchByID}`)
         .then((res)=>{setUbication(res.data)
                         console.log(res.data)})
-
     }
 
 
     return (
-        <div>
+        <div className='input'>
             <input type="text"
+            placeholder="Type id location"
             onChange={e =>setSearchByID(e.target.value)} 
             value={SearchByID}/>
-
             <button onClick={Loking}>SearchByID</button>
-            
-            <p>{SearchByID.name}</p>
+            {/* <p>{SearchByID.name}</p> */}
         </div>
     );
 };
