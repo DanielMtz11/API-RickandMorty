@@ -18,6 +18,7 @@ const SearchBox = ({setUbication}) => {
     return (
         <div className='input'>
             <input type="text"
+            placeholder="Type id location"
             onChange={e =>setSearchByID(e.target.value)} 
             value={SearchByID}/>
 
