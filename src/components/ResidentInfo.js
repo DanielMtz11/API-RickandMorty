@@ -12,9 +12,20 @@ const ResidentInfo = ({residentUrl}) => {
                         console.log(res.data)})
     },[])
     return (
-        <li>
+        <li className='flex'>
+
+            <div>
+            <img  className='ResidentImg' src={recident.image} alt="" />
+            </div>
+            <div>
             {recident.name}
-            <img src={recident.image} alt="" />
+            <p> {recident?.status}</p>
+                <p>origin </p>
+                <p>{recident.origin?.name}</p>
+                <p>episodes where appear </p>
+                <p> {recident.episode?.length}</p>
+
+            </div>
             
         </li>
         

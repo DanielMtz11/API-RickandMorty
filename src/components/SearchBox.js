@@ -21,9 +21,11 @@ const SearchBox = ({setUbication}) => {
             onChange={e =>setSearchByID(e.target.value)} 
             value={SearchByID}/>
             <button onClick={Loking}>SearchByID</button>
+            
             {/* <p>{SearchByID.name}</p> */}
         </div>
     );
+    
 };
 
 export default SearchBox;
