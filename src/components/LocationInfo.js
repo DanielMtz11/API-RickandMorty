@@ -8,8 +8,8 @@ import React from'react';
 const LocationInfo = ({name,type,dimension,population}) => {
     return (
         <div className='locationInfo'>
-            <h1>{name}</h1>
-            <div className='details'>
+            <h1 className='locationInfo__h1'>{name}</h1>
+            <div className='locationInfo__details'>
                 <span>{`Type: ${type}`}</span>
                 <span>{`Dimension: ${dimension}`}</span>
                 <span>{`Population: ${population}`}</span>

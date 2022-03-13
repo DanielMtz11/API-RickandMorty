@@ -1,19 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+
+header{
+  background-image: url(./Assets/Rick.jpg);
+}
 body{
   height: 100%;
   width: 100%;
-  background-color: rgb(39, 33, 33);
-
+  background-color: rgb(27, 24, 24);
+  font-family: 'Acme', sans-serif;
 }
 
 
 .App {
   text-align: center;
+}
+.img-Fond{
+  height: 300px;
+  width: 1300px;
+}
+
+
+.title{
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 25px;
 }
 .input{
   text-align: center;
@@ -24,7 +42,11 @@ body{
 
 }
 .ResidentsP{
-  text-align: center;
+  text-align: center; 
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 30px;
+
 }
 
 .Residents{
@@ -60,34 +82,55 @@ body{
   line-height:30px;
   /* padding-top:  */
   padding-top: 25px;
+  font-size: 17px;
 }
 
+.ResidentsInfo>.p-diferent{
+  color: rgb(39, 33, 33);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* location info styles */
 .locationInfo{
   min-width: 320px;
-  max-width: 950px;
+  max-width: 920px;
+  min-height: 200px;
   margin: 25px auto;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   text-align: center;
-  border:2px solid black ;
+  /* border:2px solid black ; */
   border-radius: 8px;
- background-color: aliceblue;
+  background-color: aliceblue;
+  background-color: rgb(39, 33, 33);/*No le quito el background anterior para tratar de que no haya conflictos */
+  color: whitesmoke;
+
 }
 .locationInfo__h1{
   font-size: 40px;
   /* background-color: #61dafb; */
- 
 }
 .locationInfo__details{
   margin-top: 20px;
   text-align: left;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
- 
+
 }
 .locationInfo__details span{
   display: block;
   margin: 10px ;
- 
 }
 /* search box styles */
 .input{
@@ -98,42 +141,37 @@ body{
   margin: 0 auto;
   display: flex;
   justify-content: center;
- 
- 
+
+
 }
- 
+
 .input input{
   width: 70%;
   text-align: center;
   font-size: 25px;
   border-radius: 10px 0 0 10px;
   outline: none;
- 
 }
 .input input::placeholder{
   text-align: center;
   /* color: blue; */
   font-size: 20px;
- 
 }
 .input button{
   width: 30%;
   font-size: 20px;
- 
+
   border-radius: 0 10px 10px 0;
- 
+
 }
- 
- 
+
+
 @media only screen and (min-width:650px){
- 
   .locationInfo__details{
     text-align: center;
   }
   .locationInfo__details span{
     display: inline;
- 
+  
   }
 }
-
-
