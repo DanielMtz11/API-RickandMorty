@@ -1,19 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+
+header{
+  background-image: url(./Assets/Rick.jpg);
+}
 body{
   height: 100%;
   width: 100%;
-  background-color: rgb(39, 33, 33);
-
+  background-color: rgb(27, 24, 24);
+  font-family: 'Acme', sans-serif;
 }
 
 
 .App {
   text-align: center;
+}
+.img-Fond{
+  height: 300px;
+  width: 1300px;
+}
+
+
+.title{
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 25px;
 }
 .input{
   text-align: center;
@@ -24,7 +42,11 @@ body{
 
 }
 .ResidentsP{
-  text-align: center;
+  text-align: center; 
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 30px;
+
 }
 
 .Residents{
@@ -60,6 +82,11 @@ body{
   line-height:30px;
   /* padding-top:  */
   padding-top: 25px;
+  font-size: 17px;
+}
+
+.ResidentsInfo>.p-diferent{
+  color: rgb(39, 33, 33);
 }
 
 @keyframes App-logo-spin {
@@ -83,9 +110,11 @@ body{
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  border:2px solid black ;
+  /* border:2px solid black ; */
   border-radius: 8px;
   background-color: aliceblue;
+  background-color: rgb(39, 33, 33);/*No le quito el background anterior para tratar de que no haya conflictos */
+  color: whitesmoke;
 
 }
 .locationInfo__h1{

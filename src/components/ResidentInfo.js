@@ -17,12 +17,12 @@ const ResidentInfo = ({residentUrl}) => {
             <div>
             <img  className='ResidentImg' src={recident.image} alt="" />
             </div>
-            <div>
-            {recident.name}
+            <div className='ResidentsInfo'>
+           <h2>{recident.name}</h2> 
             <p> {recident?.status}</p>
-                <p>origin </p>
+                <p className='p-diferent'>origin </p>
                 <p>{recident.origin?.name}</p>
-                <p>episodes where appear </p>
+                <p className='p-diferent'>episodes where appear </p>
                 <p> {recident.episode?.length}</p>
 
             </div>
