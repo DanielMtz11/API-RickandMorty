@@ -16,14 +16,14 @@ const SearchBox = ({setUbication}) => {
 
 
     return (
-        <div>
+        <div className='input'>
             <input type="text"
             onChange={e =>setSearchByID(e.target.value)} 
             value={SearchByID}/>
 
             <button onClick={Loking}>SearchByID</button>
             
-            <p>{SearchByID.name}</p>
+            {/* <p>{SearchByID.name}</p> */}
         </div>
     );
 };
