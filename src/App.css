@@ -18,12 +18,23 @@ body{
 }
 
 
-.App {
+.app {
   text-align: center;
+  min-width: 320px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.bannerImg_container{
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
 }
 .img-Fond{
-  height: 300px;
-  width: 1300px;
+  /* height: 300px; */
+  /* width: 1300px}; */
+  height: auto;
+  width: 100%;
 }
 
 
@@ -89,14 +100,6 @@ body{
   color: rgb(39, 33, 33);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 /* location info styles */
@@ -174,4 +177,20 @@ body{
     display: inline;
   
   }
+
+}
+@media only screen and (min-width:700px){
+  .bannerImg_container{
+    height: 300px;
+  }
+  .img-Fond{
+    transform: translateY(-150px);
+  }
+
+}
+@media only screen and (min-width:900px){
+  .img-Fond{
+    transform: translateY(-250px);
+  }
+
 }

@@ -6,7 +6,8 @@ import axios from 'axios';
 import SearchBox from './components/SearchBox';
 import LocationInfo from './components/LocationInfo'
 import ResidentList from './components/ResidentList';
-import img from './Assets/Rick.jpg'
+import img from './Assets/RickMorty.jpeg';
+// ssrc\Assets\banner3Rick.jpg
 
 function App() {
   const [Ubication , setUbication]=useState({})
@@ -18,7 +19,9 @@ function App() {
    
   return (
     <div className='app'>
-      <img className='img-Fond' src={img} alt="" />
+      <div className='bannerImg_container'>
+        <img className='img-Fond' src={img} alt="" />
+      </div>
       <h1 className='title'>Rick and Morty wiki</h1>
             <SearchBox setUbication = {setUbication}/>
             <LocationInfo

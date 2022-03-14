@@ -10,7 +10,7 @@ const ResidentInfo = ({residentUrl}) => {
             axios.get(residentUrl)
             .then((res)=>{setRecident(res.data)
                         console.log(res.data)})
-    },[])
+    })
     return (
         <li className='flex'>
 
