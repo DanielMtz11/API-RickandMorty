@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import { useState, useEffect} from 'react';
+import { useState } from 'react';
+import { useEffect} from 'react';
 
 const ResidentInfo = ({residentUrl}) => {
 
@@ -12,7 +13,6 @@ const ResidentInfo = ({residentUrl}) => {
                         // console.log(res.data)
                     })
     },[residentUrl])
-
 
 
     if(recident?.status==="Alive"){
