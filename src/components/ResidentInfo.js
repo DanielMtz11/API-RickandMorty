@@ -9,11 +9,11 @@ const ResidentInfo = ({residentUrl}) => {
     useEffect(()=> {
             axios.get(residentUrl)
             .then((res)=>{setRecident(res.data)
-                        console.log(res.data)
+                        // console.log(res.data)
                     })
-    },[])
+    },[residentUrl])
 
-    // console.log(`estatus: ${recident?.status}`);
+
 
     if(recident?.status==="Alive"){
 
