@@ -38,7 +38,7 @@ const ResidentInfo = ({residentUrl}) => {
         )
         }
 
-        if(recident?.status == "Dead"){
+        if(recident?.status === "Dead"){
             return(
                 <li className='flex'>
 
