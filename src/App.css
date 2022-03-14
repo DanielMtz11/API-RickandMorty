@@ -63,7 +63,9 @@ body{
 .Residents{
   max-width: 900px;
   margin: 0 auto;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px ;
 
@@ -89,11 +91,21 @@ body{
   /* justify-content: center; */
 }
 
+.circle {
+	/* width: 10px; */
+	/* height: 10px; */
+	/* background-color: blue; */
+	border-radius: 50%;
+	padding: 0px 10px;
+	margin: 0 5px;
+}
+
 .ResidentsInfo{
   line-height:30px;
   /* padding-top:  */
   padding-top: 25px;
   font-size: 17px;
+  text-align: left;
 }
 
 .ResidentsInfo>.p-diferent{
@@ -177,6 +189,7 @@ body{
     display: inline;
   
   }
+ 
 
 }
 @media only screen and (min-width:700px){
@@ -187,10 +200,24 @@ body{
     transform: translateY(-150px);
   }
 
+ 
+
 }
 @media only screen and (min-width:900px){
   .img-Fond{
     transform: translateY(-250px);
   }
 
+
+}
+
+@media only screen and (min-width:1100px){
+  .Residents{
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px ;
+  
+  }
 }
