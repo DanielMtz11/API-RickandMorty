@@ -6,7 +6,8 @@ import axios from 'axios';
 import SearchBox from './components/SearchBox';
 import LocationInfo from './components/LocationInfo'
 import ResidentList from './components/ResidentList';
-import img from './Assets/RickMorty.jpeg';
+// import img from './Assets/RickMorty.jpeg';
+import img3 from './Assets/Desktop.webp'
 // ssrc\Assets\banner3Rick.jpg
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
   return (
     <div className='app'>
       <div className='bannerImg_container'>
-        <img className='img-Fond' src={img} alt="" />
+        {/* <img className='img-Fond' src={img} alt="" /> */}
+        <img className='img-Fond' src={img3} alt="" />
       </div>
       <h1 className='title'>Rick and Morty wiki</h1>
             <SearchBox setUbication = {setUbication}/>
